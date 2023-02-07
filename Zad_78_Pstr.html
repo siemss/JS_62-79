@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+    <script>
+        var liczba_pst1=prompt("Napisz Pierwszą liczbe=");
+        var liczba_pst2=prompt("Napisz Drugą liczbe=");
+        if (liczba_pst1<liczba_pst2)
+        {
+            for(let i = liczba_pst1;i<=liczba_pst2;i++)
+            {
+            if(i%2==1)
+            {
+            document.write("<span style=\"color:red;font-size:30px;\">"+i+"</span><br>");
+            }
+            }
+        }
+        else if (liczba_pst1>liczba_pst2)
+        {
+            for(let i = liczba_pst1;i>=liczba_pst2;i--)
+            {
+            if(i%2==1)
+            {
+                document.write("<span style=\"color:blue;font-size:15px;\">"+i+"</span><br>");
+            }
+            }
+        }
+        else
+        {
+            document.write("brak obliczeń !!!!")
+        }
+    </script>
+</body>
+</html>
+<!-- Michał Pstrągowski 3F-->

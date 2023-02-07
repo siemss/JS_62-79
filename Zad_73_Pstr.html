@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var a_pst=prompt("Podaj Nazwisko");
+            var b_pst=prompt("Podaj Imię");
+            a_pst=(a_pst.length%3)+5;
+            b_pst=(b_pst.length%0)+20;
+            for(let i = 0;i<a_pst;i++)
+            {
+                if(i==0 || i==(a_pst-1))
+                {
+                    for(let j = 0;j<b_pst;j++)
+                    {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+                else
+                {
+                    document.write("*");
+                    for(let j = 2;j<b_pst;j++)
+                    {
+                        document.write("&nbsp&nbsp")
+                    }
+                    document.write("*");
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </body>
+</html>
+<!-- Michał Pstrągowski 3F-->
